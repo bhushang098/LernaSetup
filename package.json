@@ -1,0 +1,30 @@
+{
+  "name": "lerna-typescript-monorepo",
+  "version": "independent",
+  "useWorkspaces": true,
+  "description": "A monorepo managed with Lerna and TypeScript",
+  "private": true,
+  "scripts": {
+    "build": "lerna run build",
+    "clean": "lerna clean && rimraf node_modules && rimraf **/dist",
+    "bootstrap": "lerna bootstrap",
+    "test": "lerna run test"
+  },
+  "keywords": [
+    "lerna",
+    "typescript",
+    "monorepo",
+    "workspace"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^7.4.2",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {}
+}
